@@ -1,10 +1,22 @@
 {
   "posts": [
     {
-      "id": "4",
-      "title": "Testing a 4th post",
-      "datetime": "February 02, 2024 12:27:31 PM",
-      "body": "Some more testing paragraphs!"
+      "id": 1,
+      "title": "Wonderr Once Said",
+      "datetime": "February 06, 2024 3:40:15 PM",
+      "body": "Just Don't Stop"
+    },
+    {
+      "id": 2,
+      "title": "Billie Eilish Note",
+      "datetime": "February 06, 2024 3:40:34 PM",
+      "body": "What I Was Made For???"
+    },
+    {
+      "id": 3,
+      "title": "Belar's Advice",
+      "datetime": "February 06, 2024 3:41:49 PM",
+      "body": "Do not get yourself engaged if you're not ready for a relationship."
     }
   ]
 }

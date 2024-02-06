@@ -1,13 +1,17 @@
 import React from "react";
+import { useContext } from "react";
+import DataContext from "./context/DataContext";
 
 import Feed from "./Feed";
 
-const Home = ({ posts, fetchError, isLoading }) => {
+const Home = () => {
+  const { posts, fetchError, isLoading } = useContext(DataContext);
+
   return (
     <main className="Home">
-      {isLoading && <p className="statusMessage">Loading Posts...</p>}
+      {isLoading && <p className="statusMsg">Loading Posts...</p>}
       {!isLoading && fetchError && (
-        <p className="statusMessage" style={{ color: "red" }}>
+        <p className="statusMsg" style={{ color: "red" }}>
           {fetchError}
         </p>
       )}
@@ -17,7 +21,7 @@ const Home = ({ posts, fetchError, isLoading }) => {
         (posts.length ? (
           <Feed posts={posts} />
         ) : (
-          <p className="statusMessage">No Posts to display!</p>
+          <p className="statusMsg">No Posts to display!</p>
         ))}
     </main>
   );
